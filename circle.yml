@@ -12,4 +12,4 @@ deployment:
   chain:
     branch: circleci
     commands:
-      curl -X POST https://circleci.com/api/v1/project/AkihikoOkubo/nablarch-wmq-adaptor/tree/master?circle-token=$nablarch_wmq_adaptor_TOKEN
+      - curl -X POST https://circleci.com/api/v1/project/AkihikoOkubo/nablarch-wmq-adaptor/tree/master?circle-token=$nablarch_wmq_adaptor_TOKEN
