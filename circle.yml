@@ -1,11 +1,15 @@
 machine:
     timezone: Asia/Tokyo
+    
+    service:
+        - docker
 
 dependencies: 
   pre: 
     - chmod +x gradlew
 
-#testの内容をオーバーライド
-test:
-  override:
-    - ./gradlew sonarRunner
+deployment:
+  chain:
+    branch: circleci
+    commands:
+      curl -X POST https://circleci.com/api/v1/project/AkihikoOkubo/nablarch-wmq-adaptor/tree/master?circle-token=$nablarch_wmq_adaptor_TOKEN
