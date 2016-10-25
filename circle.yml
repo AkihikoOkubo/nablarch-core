@@ -1,8 +1,5 @@
 machine:
     timezone: Asia/Tokyo
-    
-    service:
-        - docker
 
 dependencies: 
   pre: 
