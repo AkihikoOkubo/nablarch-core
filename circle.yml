@@ -8,4 +8,4 @@ dependencies:
 #testの内容をオーバーライド
 test:
   override:
-    - ./gradlew nablarch-core:sonarRunner
+    - ./gradlew sonarRunner
