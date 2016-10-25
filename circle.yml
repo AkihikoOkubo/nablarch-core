@@ -5,6 +5,7 @@ dependencies:
   pre: 
     - chmod +x gradlew
 
+#testの内容をオーバーライド
 test:
   override:
     - ./gradlew nablarch-core:sonarRunner
