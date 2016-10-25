@@ -1,0 +1,6 @@
+machine:
+    timezone: Asia/Tokyo
+
+dependencies: 
+  pre: 
+    - chmod +x gradlew
